@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.contenedor_recycler1);
 
         initRecyclerView();
         // initRetrofit();
@@ -31,13 +31,13 @@ public class MainActivity extends AppCompatActivity {
     // private PeliculaAdapter1 adapter;
 
     private void initRecyclerView(){
-       // recyclerView = findViewById(R.id.recyclerViewPeliculas);
-        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
+       recyclerView = findViewById(R.id.recyclerViewPeliculas);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         //peliculas = cargarDatos();
 
 
-        //recyclerView.setAdapter(adapter);
+        recyclerView.setAdapter(adapter);
 
     }
     private void initRetrofit(){
